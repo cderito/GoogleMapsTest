@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
 struct GoogleMapsTestApp: App {
+    init() {
+        GMSServices.setMetalRendererEnabled(true)
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
